@@ -4,13 +4,6 @@
  - Juan Sebastián Méndez
  - Juan José Villegas
 
- # Pitest
- ### Coverage Report
+Para ver la documentación completa dirigirse al siguiente link:
 
- ![Coverage Report](https://github.com/se-mende/PruebasAutomaticas/blob/master/Taller%208/Pitest%20-%20Coverage%20report.png)
-
-### Package Summaru
-![Package Summary](https://github.com/se-mende/PruebasAutomaticas/blob/master/Taller%208/Pitest%20-%20Package%20summary.png)
-
-### Category Mutations
-![Category Mutations](https://github.com/se-mende/PruebasAutomaticas/blob/master/Taller%208/Pitest%20-%20Category%20mutations.png)
+[Documentación Taller 8](https://amqafrjsmjm.gitbook.io/taller-8/)
