@@ -1,0 +1,628 @@
+19:24:41 (56979) INFO ConfigReader Using stryker.conf.js
+19:24:42 (56979) DEBUG BroadcastReporter Broadcasting to reporters ["html","clear-text","progress"]
+19:24:41 (56979) DEBUG ConfigReader Loading config /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/stryker.conf.js
+19:24:41 (56979) DEBUG ConfigReader Loaded config: {
+  "mutate": [
+    "js/**/*.js"
+  ],
+  "logLevel": "debug",
+  "fileLogLevel": "trace",
+  "timeoutMS": 5000,
+  "timeoutFactor": 1.5,
+  "plugins": [
+    "@stryker-mutator/*"
+  ],
+  "reporters": [
+    "html",
+    "clear-text",
+    "progress"
+  ],
+  "coverageAnalysis": "perTest",
+  "testRunner": "karma",
+  "mutator": "javascript",
+  "transpilers": [],
+  "maxConcurrentTestRunners": null,
+  "symlinkNodeModules": true,
+  "thresholds": {
+    "break": null,
+    "high": 80,
+    "low": 60
+  },
+  "allowConsoleColors": true,
+  "dashboard": {
+    "baseUrl": "https://dashboard.stryker-mutator.io/api/reports",
+    "reportType": "full"
+  },
+  "tempDirName": ".stryker-tmp",
+  "packageManager": "npm",
+  "testFramework": "jasmine",
+  "karma": {
+    "projectType": "custom",
+    "configFile": "test/config/karma.conf.js",
+    "config": {}
+  },
+  "configFile": "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/stryker.conf.js"
+}
+19:24:41 (56979) DEBUG PluginLoader Loading @stryker-mutator/* from /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/node_modules/@stryker-mutator
+19:24:41 (56979) DEBUG PluginLoader Loading plugin "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/node_modules/@stryker-mutator/jasmine-framework" (matched with expression @stryker-mutator/*)
+19:24:41 (56979) DEBUG PluginLoader Loading plugin "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/node_modules/@stryker-mutator/javascript-mutator" (matched with expression @stryker-mutator/*)
+19:24:41 (56979) DEBUG PluginLoader Loading plugin "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/node_modules/@stryker-mutator/karma-runner" (matched with expression @stryker-mutator/*)
+19:24:41 (56979) DEBUG PluginLoader Loading plugins /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/node_modules/@stryker-mutator/jasmine-framework
+19:24:41 (56979) DEBUG PluginLoader Loading plugins /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/node_modules/@stryker-mutator/javascript-mutator
+19:24:42 (56979) DEBUG PluginLoader Loading plugins /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/node_modules/@stryker-mutator/karma-runner
+19:24:42 (56979) DEBUG PluginLoader Loading plugins /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/node_modules/@stryker-mutator/core/src/reporters/index.js
+19:24:42 (56979) INFO InputFileResolver Found 5 of 17 file(s) to be mutated.
+19:24:42 (56979) DEBUG InputFileResolver All input files: [
+  "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/stryker.conf-backup.js",
+  "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/stryker.conf.js",
+  "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/stryker.log",
+  "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/.gitignore",
+  "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/debug.log",
+  "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/index.html",
+  "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/app.js",
+  "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js",
+  "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/directives/todoEscape.js",
+  "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/directives/todoFocus.js",
+  "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js",
+  "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/package-lock.json",
+  "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/package.json",
+  "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/readme.md",
+  "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/test/config/karma.conf.js",
+  "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/test/unit/directivesSpec.js",
+  "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/test/unit/todoCtrlSpec.js"
+]
+19:24:42 (56979) DEBUG InputFileResolver Files to mutate: [
+  "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/app.js",
+  "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js",
+  "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/directives/todoEscape.js",
+  "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/directives/todoFocus.js",
+  "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js"
+]
+19:24:42 (56979) DEBUG TemporaryDirectory Using temp directory "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/.stryker-tmp"
+19:24:42 (56979) DEBUG TestFrameworkOrchestrator Using testFramework jasmine based on `testFramework` setting
+19:24:42 (56979) INFO InitialTestExecutor Starting initial test run. This may take a while.
+19:24:42 (56979) DEBUG Sandbox Creating a sandbox for files in /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/.stryker-tmp/sandbox2670767
+19:24:42 (56979) DEBUG Sandbox Creating test runner 0
+19:24:42 (56979) DEBUG ChildProcessProxy Starting /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/node_modules/@stryker-mutator/core/src/test-runner/ChildProcessTestRunnerWorker.js in child process 56981
+19:24:42 (56981) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/.stryker-tmp/sandbox2670767
+19:24:42 (56981) DEBUG PluginLoader Loading @stryker-mutator/* from /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/node_modules/@stryker-mutator
+19:24:42 (56981) DEBUG PluginLoader Loading plugin "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/node_modules/@stryker-mutator/jasmine-framework" (matched with expression @stryker-mutator/*)
+19:24:42 (56981) DEBUG PluginLoader Loading plugin "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/node_modules/@stryker-mutator/javascript-mutator" (matched with expression @stryker-mutator/*)
+19:24:42 (56981) DEBUG PluginLoader Loading plugin "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/node_modules/@stryker-mutator/karma-runner" (matched with expression @stryker-mutator/*)
+19:24:42 (56981) DEBUG PluginLoader Loading plugins /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/node_modules/@stryker-mutator/jasmine-framework
+19:24:42 (56981) DEBUG PluginLoader Loading plugins /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/node_modules/@stryker-mutator/javascript-mutator
+19:24:42 (56981) DEBUG PluginLoader Loading plugins /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/node_modules/@stryker-mutator/karma-runner
+19:24:43 (56981) DEBUG PluginLoader Loading plugins /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/node_modules/@stryker-mutator/core/src/reporters/index.js
+19:24:43 (56981) DEBUG stryker-karma.conf.js Importing config from "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/.stryker-tmp/sandbox2670767/test/config/karma.conf.js"
+19:24:43 (56979) TRACE ChildProcessProxy [33m07 04 2020 19:24:43.257:WARN [watcher]: [39mPattern "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/node_modules/@stryker-mutator/karma-runner/node_modules/angular/angular.js" does not match any file.
+
+19:24:43 (56979) TRACE ChildProcessProxy [33m07 04 2020 19:24:43.259:WARN [watcher]: [39mPattern "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/node_modules/@stryker-mutator/karma-runner/node_modules/angular-route/angular-route.js" does not match any file.
+
+19:24:43 (56979) TRACE ChildProcessProxy [33m07 04 2020 19:24:43.260:WARN [watcher]: [39mPattern "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/node_modules/@stryker-mutator/karma-runner/node_modules/angular-resource/angular-resource.js" does not match any file.
+
+19:24:43 (56979) TRACE ChildProcessProxy [33m07 04 2020 19:24:43.261:WARN [watcher]: [39mPattern "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/node_modules/@stryker-mutator/karma-runner/node_modules/angular-mocks/angular-mocks.js" does not match any file.
+
+19:24:43 (56979) TRACE ChildProcessProxy [33m07 04 2020 19:24:43.262:WARN [watcher]: [39mPattern "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/node_modules/@stryker-mutator/karma-runner/js/**/*.js" does not match any file.
+
+19:24:43 (56979) TRACE ChildProcessProxy [33m07 04 2020 19:24:43.262:WARN [watcher]: [39mPattern "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/node_modules/@stryker-mutator/karma-runner/test/unit/**/*.js" does not match any file.
+
+19:24:43 (56979) TRACE ChildProcessProxy [32m07 04 2020 19:24:43.267:INFO [karma]: [39mKarma v0.13.22 server started at http://localhost:9876/
+
+19:24:43 (56979) TRACE ChildProcessProxy [32m07 04 2020 19:24:43.269:INFO [launcher]: [39mStarting browser Chrome
+
+19:24:43 (56979) TRACE ChildProcessProxy [32m07 04 2020 19:24:43.274:INFO [launcher]: [39mStarting browser Firefox
+
+19:24:44 (56979) TRACE ChildProcessProxy [32m07 04 2020 19:24:44.664:INFO [Chrome 80.0.3987 (Mac OS X 10.15.3)]: [39mConnected on socket pub2HKg3fMKKDHKwAAAA with id 53082537
+
+19:24:46 (56979) TRACE ChildProcessProxy [32m07 04 2020 19:24:46.030:INFO [Firefox 74.0.0 (Mac OS X 10.15.0)]: [39mConnected on socket Dy3Ek_k9i8Hi3MuAAAAB with id 98129178
+
+19:24:46 (56979) DEBUG InitialTestExecutor Adding test hooks for coverageAnalysis "perTest".
+19:24:46 (56979) DEBUG TimeoutDecorator Starting timeout timer (300000 ms) for a test run
+19:24:46 (56979) TRACE ChildProcessProxy [31m07 04 2020 19:24:46.037:ERROR [runner]: [39mThere is no server listening on port NaN
+
+19:24:46 (56981) DEBUG KarmaTestRunner karma run done with  1
+19:24:46 (56979) DEBUG ChildProcessProxy Disposing of worker process 56981
+19:24:46 (56979) DEBUG ChildProcessProxy Kill 56981
+19:24:46 (56979) WARN InitialTestExecutor No tests were executed. Stryker will exit prematurely. Please check your configuration.
+19:24:46 (56979) DEBUG BabelParser Using options {"plugins":["asyncGenerators","bigInt","classProperties","dynamicImport","flow","jsx","objectRestSpread",["decorators",{"decoratorsBeforeExport":true}]],"sourceType":"unambiguous"}
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/app.js with replacement code """"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator ArrayDeclaration in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/app.js with replacement code "[]"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/app.js with replacement code """"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/app.js with replacement code """"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/app.js with replacement code "{
+  'use strict';
+}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator ObjectLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/app.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/app.js with replacement code """"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/app.js with replacement code """"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator ObjectLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/app.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/app.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/app.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/app.js with replacement code """"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/app.js with replacement code """"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator ObjectLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/app.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/app.js with replacement code """"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code """"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code """"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "{
+  'use strict';
+}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code ""Stryker was here!""
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code """"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code """"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator ObjectLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BooleanLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "true"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator ArithmeticOperator in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "todos.length + $scope.remainingCount"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BooleanLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "$scope.remainingCount"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BooleanLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "false"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code """"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "true"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "false"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator LogicalOperator in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "$routeParams.status && ''"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code ""Stryker was here!""
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "true"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "false"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator EqualityOperator in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "status !== 'active'"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code """"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator ObjectLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BooleanLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "true"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "true"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "false"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator EqualityOperator in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "status !== 'completed'"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code """"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator ObjectLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BooleanLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "false"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator ObjectLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BooleanLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "true"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "true"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "false"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BooleanLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "newTodo.title"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BooleanLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "false"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code ""Stryker was here!""
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BooleanLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "true"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "true"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "false"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator LogicalOperator in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "event === 'blur' || $scope.saveEvent === 'submit'"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "true"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "false"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator EqualityOperator in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "event !== 'blur'"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code """"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "true"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "false"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator EqualityOperator in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "$scope.saveEvent !== 'submit'"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code """"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "true"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "false"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "true"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "false"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator EqualityOperator in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "todo.title !== $scope.originalTodo.title"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code """"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code """"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BooleanLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "false"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "true"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "false"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BooleanLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "todo.completed"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "true"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "false"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator EqualityOperator in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "todo.completed === completed"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/directives/todoEscape.js with replacement code """"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/directives/todoEscape.js with replacement code """"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/directives/todoEscape.js with replacement code "{
+  'use strict';
+}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/directives/todoEscape.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/directives/todoEscape.js with replacement code """"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/directives/todoEscape.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/directives/todoEscape.js with replacement code "true"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/directives/todoEscape.js with replacement code "false"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator EqualityOperator in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/directives/todoEscape.js with replacement code "event.keyCode !== ESCAPE_KEY"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/directives/todoEscape.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/directives/todoEscape.js with replacement code """"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/directives/todoEscape.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/directives/todoEscape.js with replacement code """"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/directives/todoFocus.js with replacement code """"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/directives/todoFocus.js with replacement code """"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/directives/todoFocus.js with replacement code "{
+  'use strict';
+}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/directives/todoFocus.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/directives/todoFocus.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/directives/todoFocus.js with replacement code "true"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/directives/todoFocus.js with replacement code "false"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/directives/todoFocus.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/directives/todoFocus.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BooleanLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/directives/todoFocus.js with replacement code "true"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code """"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code """"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{
+  'use strict'; // Detect if an API backend is present. If so, return the API module, else
+  // hand off the localStorage adapter
+}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code """"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code """"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code """"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code """"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{
+  'use strict';
+}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator ObjectLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator ArrayDeclaration in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "["Stryker was here"]"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code """"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator ObjectLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator ObjectLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code """"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BooleanLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "todo.completed"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator ObjectLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator ObjectLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code """"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{
+  'use strict';
+}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code """"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator ObjectLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator ArrayDeclaration in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "["Stryker was here"]"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "true"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "false"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator LogicalOperator in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "localStorage.getItem(STORAGE_ID) && '[]'"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code """"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BooleanLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "todo.completed"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{}"
+19:24:46 (56979) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{}"
+19:24:46 (56979) INFO MutatorFacade 170 Mutant(s) generated
+19:24:46 (56979) WARN MutantTestMatcher No coverage result found, even though coverageAnalysis is "perTest". Assuming that all tests cover each mutant. This might have a big impact on the performance.
+18:11:05 (58584) INFO ConfigReader Using stryker.conf.js
+18:11:05 (58584) DEBUG BroadcastReporter Broadcasting to reporters ["html","clear-text","progress"]
+18:11:05 (58584) DEBUG ConfigReader Loading config /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/stryker.conf.js
+18:11:05 (58584) DEBUG ConfigReader Loaded config: {
+  "mutate": [
+    "js/**/*.js"
+  ],
+  "logLevel": "debug",
+  "fileLogLevel": "trace",
+  "timeoutMS": 5000,
+  "timeoutFactor": 1.5,
+  "plugins": [
+    "@stryker-mutator/*"
+  ],
+  "reporters": [
+    "html",
+    "clear-text",
+    "progress"
+  ],
+  "coverageAnalysis": "perTest",
+  "testRunner": "karma",
+  "mutator": "javascript",
+  "transpilers": [],
+  "maxConcurrentTestRunners": null,
+  "symlinkNodeModules": true,
+  "thresholds": {
+    "break": null,
+    "high": 80,
+    "low": 60
+  },
+  "allowConsoleColors": true,
+  "dashboard": {
+    "baseUrl": "https://dashboard.stryker-mutator.io/api/reports",
+    "reportType": "full"
+  },
+  "tempDirName": ".stryker-tmp",
+  "packageManager": "npm",
+  "testFramework": "jasmine",
+  "karma": {
+    "projectType": "custom",
+    "configFile": "test/config/karma.conf.js",
+    "config": {}
+  },
+  "configFile": "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/stryker.conf.js"
+}
+18:11:05 (58584) DEBUG PluginLoader Loading @stryker-mutator/* from /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/node_modules/@stryker-mutator
+18:11:05 (58584) DEBUG PluginLoader Loading plugin "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/node_modules/@stryker-mutator/jasmine-framework" (matched with expression @stryker-mutator/*)
+18:11:05 (58584) DEBUG PluginLoader Loading plugin "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/node_modules/@stryker-mutator/javascript-mutator" (matched with expression @stryker-mutator/*)
+18:11:05 (58584) DEBUG PluginLoader Loading plugin "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/node_modules/@stryker-mutator/karma-runner" (matched with expression @stryker-mutator/*)
+18:11:05 (58584) DEBUG PluginLoader Loading plugins /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/node_modules/@stryker-mutator/jasmine-framework
+18:11:05 (58584) DEBUG PluginLoader Loading plugins /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/node_modules/@stryker-mutator/javascript-mutator
+18:11:05 (58584) DEBUG PluginLoader Loading plugins /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/node_modules/@stryker-mutator/karma-runner
+18:11:05 (58584) DEBUG PluginLoader Loading plugins /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/node_modules/@stryker-mutator/core/src/reporters/index.js
+18:11:05 (58584) INFO InputFileResolver Found 5 of 17 file(s) to be mutated.
+18:11:05 (58584) DEBUG InputFileResolver All input files: [
+  "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/stryker.conf-backup.js",
+  "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/stryker.conf.js",
+  "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/stryker.log",
+  "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/.gitignore",
+  "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/debug.log",
+  "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/index.html",
+  "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/app.js",
+  "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js",
+  "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/directives/todoEscape.js",
+  "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/directives/todoFocus.js",
+  "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js",
+  "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/package-lock.json",
+  "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/package.json",
+  "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/readme.md",
+  "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/test/config/karma.conf.js",
+  "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/test/unit/directivesSpec.js",
+  "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/test/unit/todoCtrlSpec.js"
+]
+18:11:05 (58584) DEBUG InputFileResolver Files to mutate: [
+  "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/app.js",
+  "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js",
+  "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/directives/todoEscape.js",
+  "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/directives/todoFocus.js",
+  "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js"
+]
+18:11:05 (58584) DEBUG TemporaryDirectory Using temp directory "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/.stryker-tmp"
+18:11:05 (58584) DEBUG TestFrameworkOrchestrator Using testFramework jasmine based on `testFramework` setting
+18:11:05 (58584) INFO InitialTestExecutor Starting initial test run. This may take a while.
+18:11:06 (58584) DEBUG Sandbox Creating a sandbox for files in /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/.stryker-tmp/sandbox7520005
+18:11:06 (58584) DEBUG Sandbox Creating test runner 0
+18:11:06 (58584) DEBUG ChildProcessProxy Starting /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/node_modules/@stryker-mutator/core/src/test-runner/ChildProcessTestRunnerWorker.js in child process 58586
+18:11:07 (58584) TRACE ChildProcessProxy [33m08 04 2020 18:11:07.103:WARN [watcher]: [39mPattern "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/node_modules/@stryker-mutator/karma-runner/node_modules/angular/angular.js" does not match any file.
+
+18:11:07 (58584) TRACE ChildProcessProxy [33m08 04 2020 18:11:07.106:WARN [watcher]: [39mPattern "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/node_modules/@stryker-mutator/karma-runner/node_modules/angular-route/angular-route.js" does not match any file.
+
+18:11:07 (58584) TRACE ChildProcessProxy [33m08 04 2020 18:11:07.107:WARN [watcher]: [39mPattern "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/node_modules/@stryker-mutator/karma-runner/node_modules/angular-resource/angular-resource.js" does not match any file.
+
+18:11:07 (58584) TRACE ChildProcessProxy [33m08 04 2020 18:11:07.108:WARN [watcher]: [39mPattern "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/node_modules/@stryker-mutator/karma-runner/node_modules/angular-mocks/angular-mocks.js" does not match any file.
+
+18:11:07 (58584) TRACE ChildProcessProxy [33m08 04 2020 18:11:07.109:WARN [watcher]: [39mPattern "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/node_modules/@stryker-mutator/karma-runner/js/**/*.js" does not match any file.
+
+18:11:07 (58584) TRACE ChildProcessProxy [33m08 04 2020 18:11:07.110:WARN [watcher]: [39mPattern "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/node_modules/@stryker-mutator/karma-runner/test/unit/**/*.js" does not match any file.
+
+18:11:06 (58586) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/.stryker-tmp/sandbox7520005
+18:11:06 (58586) DEBUG PluginLoader Loading @stryker-mutator/* from /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/node_modules/@stryker-mutator
+18:11:06 (58586) DEBUG PluginLoader Loading plugin "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/node_modules/@stryker-mutator/jasmine-framework" (matched with expression @stryker-mutator/*)
+18:11:06 (58586) DEBUG PluginLoader Loading plugin "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/node_modules/@stryker-mutator/javascript-mutator" (matched with expression @stryker-mutator/*)
+18:11:06 (58586) DEBUG PluginLoader Loading plugin "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/node_modules/@stryker-mutator/karma-runner" (matched with expression @stryker-mutator/*)
+18:11:06 (58586) DEBUG PluginLoader Loading plugins /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/node_modules/@stryker-mutator/jasmine-framework
+18:11:06 (58586) DEBUG PluginLoader Loading plugins /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/node_modules/@stryker-mutator/javascript-mutator
+18:11:06 (58586) DEBUG PluginLoader Loading plugins /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/node_modules/@stryker-mutator/karma-runner
+18:11:07 (58586) DEBUG PluginLoader Loading plugins /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/node_modules/@stryker-mutator/core/src/reporters/index.js
+18:11:07 (58586) DEBUG stryker-karma.conf.js Importing config from "/Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/.stryker-tmp/sandbox7520005/test/config/karma.conf.js"
+18:11:07 (58584) TRACE ChildProcessProxy [32m08 04 2020 18:11:07.115:INFO [karma]: [39mKarma v0.13.22 server started at http://localhost:9876/
+
+18:11:07 (58584) TRACE ChildProcessProxy [32m08 04 2020 18:11:07.117:INFO [launcher]: [39mStarting browser Chrome
+
+18:11:07 (58584) TRACE ChildProcessProxy [32m08 04 2020 18:11:07.122:INFO [launcher]: [39mStarting browser Firefox
+
+18:11:08 (58584) TRACE ChildProcessProxy [32m08 04 2020 18:11:08.567:INFO [Chrome 80.0.3987 (Mac OS X 10.15.3)]: [39mConnected on socket NKnubFr1r5vgvo_uAAAA with id 79353306
+
+18:11:10 (58584) TRACE ChildProcessProxy [32m08 04 2020 18:11:10.761:INFO [Firefox 74.0.0 (Mac OS X 10.15.0)]: [39mConnected on socket RHjdN4LmM48_xfKCAAAB with id 29702808
+
+18:11:10 (58584) DEBUG InitialTestExecutor Adding test hooks for coverageAnalysis "perTest".
+18:11:10 (58584) DEBUG TimeoutDecorator Starting timeout timer (300000 ms) for a test run
+18:11:10 (58584) TRACE ChildProcessProxy [31m08 04 2020 18:11:10.770:ERROR [runner]: [39mThere is no server listening on port NaN
+
+18:11:10 (58586) DEBUG KarmaTestRunner karma run done with  1
+18:11:10 (58584) DEBUG ChildProcessProxy Disposing of worker process 58586
+18:11:10 (58584) DEBUG ChildProcessProxy Kill 58586
+18:11:11 (58584) WARN InitialTestExecutor No tests were executed. Stryker will exit prematurely. Please check your configuration.
+18:11:11 (58584) DEBUG BabelParser Using options {"plugins":["asyncGenerators","bigInt","classProperties","dynamicImport","flow","jsx","objectRestSpread",["decorators",{"decoratorsBeforeExport":true}]],"sourceType":"unambiguous"}
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/app.js with replacement code """"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator ArrayDeclaration in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/app.js with replacement code "[]"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/app.js with replacement code """"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/app.js with replacement code """"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/app.js with replacement code "{
+  'use strict';
+}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator ObjectLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/app.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/app.js with replacement code """"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/app.js with replacement code """"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator ObjectLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/app.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/app.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/app.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/app.js with replacement code """"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/app.js with replacement code """"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator ObjectLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/app.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/app.js with replacement code """"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code """"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code """"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "{
+  'use strict';
+}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code ""Stryker was here!""
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code """"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code """"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator ObjectLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BooleanLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "true"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator ArithmeticOperator in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "todos.length + $scope.remainingCount"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BooleanLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "$scope.remainingCount"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BooleanLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "false"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code """"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "true"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "false"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator LogicalOperator in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "$routeParams.status && ''"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code ""Stryker was here!""
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "true"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "false"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator EqualityOperator in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "status !== 'active'"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code """"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator ObjectLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BooleanLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "true"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "true"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "false"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator EqualityOperator in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "status !== 'completed'"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code """"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator ObjectLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BooleanLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "false"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator ObjectLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BooleanLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "true"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "true"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "false"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BooleanLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "newTodo.title"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BooleanLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "false"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code ""Stryker was here!""
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BooleanLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "true"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "true"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "false"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator LogicalOperator in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "event === 'blur' || $scope.saveEvent === 'submit'"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "true"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "false"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator EqualityOperator in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "event !== 'blur'"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code """"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "true"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "false"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator EqualityOperator in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "$scope.saveEvent !== 'submit'"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code """"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "true"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "false"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "true"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "false"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator EqualityOperator in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "todo.title !== $scope.originalTodo.title"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code """"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code """"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BooleanLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "false"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "true"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "false"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BooleanLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "todo.completed"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "true"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "false"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator EqualityOperator in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "todo.completed === completed"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/controllers/todoCtrl.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/directives/todoEscape.js with replacement code """"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/directives/todoEscape.js with replacement code """"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/directives/todoEscape.js with replacement code "{
+  'use strict';
+}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/directives/todoEscape.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/directives/todoEscape.js with replacement code """"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/directives/todoEscape.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/directives/todoEscape.js with replacement code "true"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/directives/todoEscape.js with replacement code "false"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator EqualityOperator in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/directives/todoEscape.js with replacement code "event.keyCode !== ESCAPE_KEY"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/directives/todoEscape.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/directives/todoEscape.js with replacement code """"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/directives/todoEscape.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/directives/todoEscape.js with replacement code """"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/directives/todoFocus.js with replacement code """"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/directives/todoFocus.js with replacement code """"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/directives/todoFocus.js with replacement code "{
+  'use strict';
+}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/directives/todoFocus.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/directives/todoFocus.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/directives/todoFocus.js with replacement code "true"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/directives/todoFocus.js with replacement code "false"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/directives/todoFocus.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/directives/todoFocus.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BooleanLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/directives/todoFocus.js with replacement code "true"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code """"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code """"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{
+  'use strict'; // Detect if an API backend is present. If so, return the API module, else
+  // hand off the localStorage adapter
+}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code """"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code """"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code """"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code """"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{
+  'use strict';
+}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator ObjectLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator ArrayDeclaration in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "["Stryker was here"]"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code """"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator ObjectLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator ObjectLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code """"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BooleanLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "todo.completed"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator ObjectLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator ObjectLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code """"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{
+  'use strict';
+}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code """"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator ObjectLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator ArrayDeclaration in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "["Stryker was here"]"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "true"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator ConditionalExpression in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "false"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator LogicalOperator in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "localStorage.getItem(STORAGE_ID) && '[]'"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator StringLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code """"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BooleanLiteral in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "todo.completed"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{}"
+18:11:11 (58584) TRACE JavaScriptMutator Generated mutant for mutator BlockStatement in file /Users/jjvillegas/Documents/miso/pruebas/taller-7/styker/angular-todomvc/js/services/todoStorage.js with replacement code "{}"
+18:11:11 (58584) INFO MutatorFacade 170 Mutant(s) generated
+18:11:11 (58584) WARN MutantTestMatcher No coverage result found, even though coverageAnalysis is "perTest". Assuming that all tests cover each mutant. This might have a big impact on the performance.
